@@ -10,7 +10,7 @@ Programas necesarios:
 - Node.js 20.19 o superior.
 - MySQL Server 8.
 - MySQL Workbench u otro cliente MySQL.
-- Git, si se va a clonar desde GitHub.
+- Git, solo si se va a clonar el repositorio de entrega desde GitHub.
 - Un editor o IDE, por ejemplo Visual Studio Code, IntelliJ IDEA, Eclipse o NetBeans.
 
 Comprobar Java:
@@ -26,7 +26,7 @@ node -v
 npm -v
 ```
 
-Comprobar Git:
+Comprobar Git, si se va a clonar desde GitHub:
 
 ```powershell
 git --version
@@ -83,7 +83,7 @@ Para crearla desde cero:
 
 El script `01_schema.sql` crea las once tablas del modelo relacional. El script `12_seed_demo_data.sql` carga usuarios, perfiles, estilos, ofertas, favoritos y valoraciones de prueba.
 
-No hace falta ejecutar los scripts `02_...` a `11_...` en una instalacion nueva. Esos archivos son cambios intermedios que se mantienen como historial del desarrollo.
+No hace falta ejecutar los scripts `02_...` a `11_...` en una instalacion nueva. Esos archivos son cambios intermedios que se mantienen como referencia tecnica de la evolucion de la base de datos.
 
 ### Credenciales de MySQL
 
@@ -238,7 +238,7 @@ Si el puerto `5173` esta ocupado, Vite suele proponer otro puerto. En ese caso s
 
 ## 9. Archivos que no se suben
 
-Estas carpetas son generadas y estan ignoradas por Git:
+Estas carpetas son generadas y no se suben al repositorio:
 
 - `frontend/node_modules/`
 - `frontend/dist/`

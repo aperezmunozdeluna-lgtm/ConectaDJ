@@ -14,7 +14,7 @@ El alcance de esta version es academico y local. El backend se ejecuta con Sprin
 - Frontend: React, Vite, JavaScript, HTML5 y CSS3.
 - Base de datos: MySQL 8.
 - Comunicacion: API REST con JSON.
-- Control de versiones: Git y GitHub.
+- Publicacion del codigo: repositorio de entrega en GitHub.
 
 ## Estructura del proyecto
 
@@ -70,7 +70,7 @@ Para una instalacion limpia solo hay que ejecutar estos scripts, en este orden:
 1. `database/01_schema.sql`
 2. `database/12_seed_demo_data.sql`
 
-Los scripts `02_...` a `11_...` son pasos intermedios que se fueron usando durante el desarrollo. Se dejan como historial, pero no son necesarios si se crea la base desde cero.
+Los scripts `02_...` a `11_...` son pasos intermedios que se fueron usando durante el desarrollo. Se dejan como referencia tecnica de la evolucion de la base de datos, pero no son necesarios si se crea la base desde cero.
 
 El backend usa por defecto:
 
@@ -146,7 +146,7 @@ npm run lint
 
 ## Carpetas que no se suben
 
-Estas carpetas se generan en local y estan ignoradas por Git:
+Estas carpetas se generan en local y no se suben al repositorio:
 
 - `frontend/node_modules/`
 - `frontend/dist/`

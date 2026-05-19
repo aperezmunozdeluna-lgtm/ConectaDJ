@@ -13,7 +13,7 @@ El primer script crea la base de datos y las once tablas del modelo. El segundo 
 
 ## Scripts intermedios
 
-Los archivos `02_...` a `11_...` se mantienen como historial de cambios del desarrollo. Sirven para ver como fue creciendo la base de datos, pero no hace falta ejecutarlos en una instalacion nueva.
+Los archivos `02_...` a `11_...` se mantienen como referencia tecnica de la evolucion de la base de datos. Sirven para ver como fue creciendo el esquema, pero no hace falta ejecutarlos en una instalacion nueva.
 
 ## Tablas principales
 
