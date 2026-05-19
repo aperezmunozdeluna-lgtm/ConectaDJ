@@ -1,0 +1,35 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+.vscode/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+npm-debug.log*
+
+# Backend
+backend/target/
+backend/.env
+backend/uploads/
+backend/logs/
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.bak
+*.class
+*.iml
+
+# Documentos de entrega externos o auxiliares
+docs/*.docx
+docs/*.pptx
+docs/Arrancar backend y fronted.txt
