@@ -30,6 +30,7 @@ backend/logs/
 *.iml
 
 # Documentos de entrega externos o auxiliares
-docs/*.docx
-docs/*.pptx
-docs/Arrancar backend y fronted.txt
+*.docx
+*.pptx
+*.pdf
+docs/Arrancar backend y frontend.txt

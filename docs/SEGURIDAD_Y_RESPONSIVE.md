@@ -26,6 +26,7 @@ El backend valida varios casos antes de guardar datos:
 - Candidaturas duplicadas bloqueadas por oferta y DJ.
 - Candidaturas solo permitidas en ofertas abiertas.
 - Mensajes no vacíos y enviados por usuarios de la conversación.
+- Las fiestas privadas solo pueden iniciar conversaciones con DJs.
 - Valoraciones entre 1 y 5.
 - Imágenes limitadas a JPG, PNG y WEBP.
 

@@ -40,7 +40,7 @@ Como comprobación adicional del repositorio se puede ejecutar también `npm run
 ## Flujo principal
 
 1. Entrar con `organizador@example.com` y contraseña `demo123`.
-2. Ir al panel de particular.
+2. Ir al panel de organizador.
 3. Crear una oferta nueva con título, ciudad, descripción, presupuesto y fecha.
 4. Cerrar sesión.
 5. Entrar con `alex@example.com` y contraseña `demo123`.

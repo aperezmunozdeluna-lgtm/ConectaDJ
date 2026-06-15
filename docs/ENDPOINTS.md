@@ -73,6 +73,8 @@ Los estilos salen del catálogo `music_styles`. Se muestran en perfiles y filtro
 | POST | `/api/messages` | Enviar un mensaje. |
 | PATCH | `/api/conversations/{conversationId}/read` | Marcar mensajes como leídos. |
 
+La mensajería se crea entre usuarios activos de la plataforma. Para la demo se recomienda enseñar el flujo principal entre organizadores o fiestas privadas y DJs. Las fiestas privadas quedan limitadas a conversaciones con DJs, que es el caso de uso previsto para ese rol.
+
 ## Imágenes
 
 | Método | Ruta | Uso |

@@ -81,7 +81,7 @@ Para crearla desde cero:
 3. Ejecutar `database/01_schema.sql`.
 4. Ejecutar `database/12_seed_demo_data.sql`.
 
-El script `01_schema.sql` crea las once tablas del modelo relacional. El script `12_seed_demo_data.sql` carga usuarios, perfiles, estilos, ofertas, favoritos y valoraciones de prueba.
+El script `01_schema.sql` crea las once tablas del modelo relacional. El script `12_seed_demo_data.sql` carga usuarios, perfiles con imagen, estilos, ofertas con imagen, candidaturas, conversaciones, mensajes, favoritos y valoraciones de prueba.
 
 No hace falta ejecutar los scripts `02_...` a `11_...` en una instalación nueva. Esos archivos son cambios intermedios que se mantienen como referencia técnica de la evolución de la base de datos.
 
@@ -110,14 +110,23 @@ DB_PASSWORD
 
 Las credenciales indicadas para MySQL corresponden únicamente al entorno local de desarrollo y pruebas. En una versión de producción deberían configurarse mediante variables de entorno y no incluirse directamente en los archivos del proyecto.
 
-### Usuarios de prueba
+### Usuarios de prueba principales
 
 | Rol | Correo | Contraseña |
 | --- | --- | --- |
 | DJ | `alex@example.com` | `demo123` |
+| DJ | `luna@example.com` | `demo123` |
 | Organizador | `organizador@example.com` | `demo123` |
 | Fiesta privada | `fiestaprivada@example.com` | `demo123` |
 | Administrador | `admin@example.com` | `demo123` |
+
+### Usuarios de prueba secundarios
+
+| Rol | Correo | Contraseña |
+| --- | --- | --- |
+| DJ | `marco@example.com` | `demo123` |
+| DJ | `carla.dj@example.com` | `demo123` |
+| DJ | `neo.techno@example.com` | `demo123` |
 
 ## 4. Arrancar backend
 
@@ -149,7 +158,7 @@ Abrir otra terminal desde la raíz del proyecto:
 ```powershell
 cd frontend
 npm install
-npm run dev
+npm run dev -- --host localhost --port 5173 --strictPort
 ```
 
 El frontend queda normalmente en:

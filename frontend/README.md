@@ -36,7 +36,7 @@ npm install
 Arrancar en desarrollo:
 
 ```powershell
-npm run dev
+npm run dev -- --host localhost --port 5173 --strictPort
 ```
 
 Compilar:

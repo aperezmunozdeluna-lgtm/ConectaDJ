@@ -85,14 +85,23 @@ Las credenciales indicadas para MySQL corresponden únicamente al entorno local 
 
 Si MySQL usa otro usuario o contraseña, se puede cambiar en `backend/src/main/resources/application.properties` o usando las variables `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`.
 
-Usuarios de prueba:
+Usuarios de prueba principales:
 
 | Rol | Correo | Contraseña |
 | --- | --- | --- |
 | DJ | `alex@example.com` | `demo123` |
+| DJ | `luna@example.com` | `demo123` |
 | Organizador | `organizador@example.com` | `demo123` |
 | Fiesta privada | `fiestaprivada@example.com` | `demo123` |
 | Administrador | `admin@example.com` | `demo123` |
+
+Usuarios de prueba secundarios:
+
+| Rol | Correo | Contraseña |
+| --- | --- | --- |
+| DJ | `marco@example.com` | `demo123` |
+| DJ | `carla.dj@example.com` | `demo123` |
+| DJ | `neo.techno@example.com` | `demo123` |
 
 ## Arrancar el backend
 
@@ -122,10 +131,10 @@ En otra terminal, desde la raíz del proyecto:
 ```powershell
 cd frontend
 npm install
-npm run dev
+npm run dev -- --host localhost --port 5173 --strictPort
 ```
 
-El frontend queda normalmente en:
+El frontend queda en:
 
 ```text
 http://localhost:5173

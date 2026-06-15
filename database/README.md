@@ -9,7 +9,7 @@ Para crear la base desde cero hay que ejecutar solo estos dos scripts:
 1. `01_schema.sql`
 2. `12_seed_demo_data.sql`
 
-El primer script crea la base de datos y las once tablas del modelo. El segundo inserta datos de prueba para poder usar la aplicación sin crear todo a mano.
+El primer script crea la base de datos y las once tablas del modelo. El segundo inserta datos de prueba limpios para poder usar la aplicación sin crear todo a mano: usuarios, perfiles con imagen, estilos musicales, ofertas con imagen, candidaturas, conversaciones, mensajes, favoritos y valoraciones.
 
 ## Scripts intermedios
 
@@ -31,13 +31,22 @@ Los archivos `02_...` a `11_...` se mantienen como referencia técnica de la evo
 
 El modelo usa claves foráneas para mantener la integridad referencial. También hay restricciones para evitar duplicados en candidaturas y favoritos. En las valoraciones, la regla de una valoración por organizador y DJ se comprueba desde el backend; reforzarla con una restricción `UNIQUE` en base de datos queda como mejora futura.
 
-## Usuarios de prueba
+## Usuarios de prueba principales
 
 | Rol | Correo | Contraseña |
 | --- | --- | --- |
 | DJ | `alex@example.com` | `demo123` |
+| DJ | `luna@example.com` | `demo123` |
 | Organizador | `organizador@example.com` | `demo123` |
 | Fiesta privada | `fiestaprivada@example.com` | `demo123` |
 | Administrador | `admin@example.com` | `demo123` |
+
+## Usuarios de prueba secundarios
+
+| Rol | Correo | Contraseña |
+| --- | --- | --- |
+| DJ | `marco@example.com` | `demo123` |
+| DJ | `carla.dj@example.com` | `demo123` |
+| DJ | `neo.techno@example.com` | `demo123` |
 
 Los datos de prueba usan comprobaciones `WHERE NOT EXISTS`, así que el script de demo se puede ejecutar más de una vez sin duplicar los registros principales.

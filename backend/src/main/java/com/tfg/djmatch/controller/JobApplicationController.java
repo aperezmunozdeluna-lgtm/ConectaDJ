@@ -79,7 +79,7 @@ public class JobApplicationController {
         if (existingApplication != null) {
             log.info("Candidatura duplicada. Oferta: {}, DJ: {}",
                     application.getJobOfferId(), application.getDjProfileId());
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("Ya estas inscrito en esta oferta");
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("Ya estás inscrito en esta oferta");
         }
 
         application.setStatus("pending");
